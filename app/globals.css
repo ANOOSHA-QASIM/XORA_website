@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------------------------
+   XORA design tokens
+   Warm, cinematic light against near-black. Derived from the opening reveal.
+---------------------------------------------------------------------------- */
+:root {
+  /* Surfaces */
+  --xora-black: #050506;
+  --xora-ink: #0b0b0d;
+
+  /* Warm reveal light */
+  --xora-glow: #ffd27d;
+  --xora-glow-strong: #ffe6b0;
+  --xora-glow-core: #fff6e0;
+
+  /* Door panels */
+  --xora-door: #0d0d10;
+  --xora-door-edge: #2a2520;
+
+  /* Text */
+  --xora-text: #f4f1ea;
+  --xora-text-muted: rgba(244, 241, 234, 0.62);
+  --xora-text-faint: rgba(244, 241, 234, 0.42);
+  --xora-hairline: rgba(244, 241, 234, 0.12);
+  --xora-button-bg: rgba(244, 241, 234, 0.08);
+  --xora-button-border: rgba(244, 241, 234, 0.18);
+
+  /* Motion timings (shared across sections) */
+  --xora-ease-door: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--xora-black);
+  color: var(--xora-text);
+  font-family: var(--font-sora), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Gentle pulse for the gate's "Scroll to enter" affordance */
+@keyframes xora-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Respect reduced motion: keep the reveal but soften it. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
