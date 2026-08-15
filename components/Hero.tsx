@@ -13,7 +13,7 @@ import { useEffect } from "react";
 
 const heroEase = [0.16, 1, 0.3, 1] as const;
 
-const headingWords = ["Automate", "Smarter."];
+const headingWords = ["Let Your", "Business"];
 
 export default function Hero() {
   /* =========================================================
@@ -423,7 +423,7 @@ export default function Hero() {
                 ease: heroEase,
               }}
             >
-              Scale Faster.
+              Work For You.
             </motion.span>
           </span>
         </h1>
