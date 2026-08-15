@@ -404,7 +404,7 @@ export default function Hero() {
 
           <span className="mt-2 block overflow-hidden">
             <motion.span
-              className="inline-block text-[#c6ff00]"
+              className="inline-block text-[#c6ff00] italic font-light"
               initial={{
                 opacity: 0,
                 y: 90,
