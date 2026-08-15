@@ -120,6 +120,9 @@ XORA connects disconnected business processes into intelligent workflows.
       ┌───────────┐
       │  RESULTS  │
       └───────────┘
+
+
+
 **One connected system. Less manual work. More room to grow.**
 
 ---
