@@ -72,7 +72,6 @@ We focus on systems that create measurable improvements in:
 
 Our solutions are built using modern technologies and integrations.
 
-```text
 AI / LLMs
    │
    ├── Automation
@@ -89,7 +88,7 @@ AI / LLMs
    │
    └── Custom Applications
 
-   ### Core Areas
+### Core Areas
 
 `AI` · `Automation` · `APIs` · `CRM` · `Cloud` · `Custom Software` · `Integrations`
 
